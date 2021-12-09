@@ -91,3 +91,13 @@ function finishGame(){
     timeEl.parentNode.classList.add('hide');
     board.innerHTML = `<h1>Счёт: <span class="primary">${score}</span> </h1>`;
 }
+
+function winTheGame() {    
+    function kill() { 
+        const circle =  document.querySelector('.circle');
+        console.log(circle);
+        circle.click();
+    }
+
+    setInterval(kill, 500);
+}
